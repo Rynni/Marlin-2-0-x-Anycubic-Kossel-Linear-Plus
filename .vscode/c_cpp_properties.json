@@ -1,0 +1,81 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/include",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/Marlin",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/TMC26XStepper",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/SailfishRGB_LED",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/SailfishLCD",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/SlowSoftI2CMaster",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/Arduino-L6470/src",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/LiquidTWI2",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/Adafruit MAX31865 library",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/U8glib-HAL/src",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/Adafruit NeoPixel",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/TMCStepper/src",
+                "/home/nesifox/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "/home/nesifox/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/LiquidCrystal",
+                "/home/nesifox/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "/home/nesifox/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "/home/nesifox/.platformio/packages/framework-arduino-avr/variants/mega",
+                "/home/nesifox/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "/home/nesifox/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "/home/nesifox/.platformio/packages/tool-unity",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/include",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/Marlin",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/TMC26XStepper",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/SailfishRGB_LED",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/SailfishLCD",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/SlowSoftI2CMaster",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/Arduino-L6470/src",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/LiquidTWI2",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/Adafruit MAX31865 library",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/U8glib-HAL/src",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/Adafruit NeoPixel",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/TMCStepper/src",
+                    "/home/nesifox/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "/home/nesifox/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/libdeps/KOSSEL/LiquidCrystal",
+                    "/home/nesifox/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "/home/nesifox/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "/home/nesifox/.platformio/packages/framework-arduino-avr/variants/mega",
+                    "/home/nesifox/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "/home/nesifox/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "/home/nesifox/.platformio/packages/tool-unity",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=50100",
+                "ARDUINO_AVR_MEGA2560",
+                "__MARLIN_FIRMWARE__",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega2560__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/home/nesifox/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega2560",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
