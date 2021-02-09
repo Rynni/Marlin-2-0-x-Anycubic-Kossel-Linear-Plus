@@ -40,7 +40,7 @@
  **                                                                                       **
  *******************************************************************************************/
 
-//#define KNUTWURST_KOSSEL_PLUS
+#define KNUTWURST_KOSSEL_PLUS
 //#define KNUTWURST_GRAPHIC_LCD
 //#define KNUTWURST_TMC
 //#define KNUTWURST_BLTOUCH
@@ -50,7 +50,7 @@
     #define ANYCUBIC_PROBE_VERSION 0
 #else
     // Anycubic Probe version 1 or 2 see README.md; 0 for no probe
-    #define ANYCUBIC_PROBE_VERSION 2
+    #define ANYCUBIC_PROBE_VERSION 0
 #endif
 
 // Heated Bed:
@@ -58,9 +58,9 @@
 // 1 ... aluminium heated bed with "BuildTak-like" sticker
 // 2 ... ultrabase heated bed
 #if ENABLED(KNUTWURST_KOSSEL_PLUS)
-   #define KNUTWURST_KOSSEL_ENABLE_BED 2
+   #define KNUTWURST_KOSSEL_ENABLE_BED 1
 #else
-   #define KNUTWURST_KOSSEL_ENABLE_BED 0
+   #define KNUTWURST_KOSSEL_ENABLE_BED 1
 #endif
 
 /**
@@ -113,7 +113,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "@knutwurst" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "nesifox" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -146,13 +146,13 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT 0
+#define SERIAL_PORT 2
 
 /**
  * Select a secondary serial port on the board to use for communication with the host.
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-//#define SERIAL_PORT_2 -1
+#define SERIAL_PORT_2 -1
 
 /**
  * This setting determines the communication speed of the printer.
@@ -163,18 +163,18 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 250000
+#define BAUDRATE 115200
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_TRIGORILLA_14
+  #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V1_2
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Knutwurst's Kossel Delta Printer"
+#define CUSTOM_MACHINE_NAME "nesifox DA-I"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -448,16 +448,16 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 11
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
 #define TEMP_SENSOR_4 0
 #define TEMP_SENSOR_5 0
-#if KNUTWURST_KOSSEL_ENABLE_BED > 0
-   #define TEMP_SENSOR_BED 5
+#if KNUTWURST_KOSSEL_ENABLE_BED > 1
+   #define TEMP_SENSOR_BED 1
 #else
-  #define TEMP_SENSOR_BED 0
+  #define TEMP_SENSOR_BED 1
 #endif
 #define TEMP_SENSOR_CHAMBER 0
 
@@ -501,7 +501,7 @@
 #define HEATER_5_MAXTEMP 275
 #define HEATER_6_MAXTEMP 275
 #define HEATER_7_MAXTEMP 275
-#define BED_MAXTEMP      150
+#define BED_MAXTEMP      125
 
 //===========================================================================
 //============================= PID Settings ================================
@@ -832,15 +832,15 @@
  * :['A4988', 'A5984', 'DRV8825', 'LV8729', 'L6470', 'L6474', 'POWERSTEP01', 'TB6560', 'TB6600', 'TMC2100', 'TMC2130', 'TMC2130_STANDALONE', 'TMC2160', 'TMC2160_STANDALONE', 'TMC2208', 'TMC2208_STANDALONE', 'TMC2209', 'TMC2209_STANDALONE', 'TMC26X', 'TMC26X_STANDALONE', 'TMC2660', 'TMC2660_STANDALONE', 'TMC5130', 'TMC5130_STANDALONE', 'TMC5160', 'TMC5160_STANDALONE']
  */
 #if DISABLED(KNUTWURST_TMC)
-    #define X_DRIVER_TYPE  A4988
-    #define Y_DRIVER_TYPE  A4988
-    #define Z_DRIVER_TYPE  A4988
+    #define X_DRIVER_TYPE  TMC2209
+    #define Y_DRIVER_TYPE  TMC2209
+    #define Z_DRIVER_TYPE  TMC2209
     //#define X2_DRIVER_TYPE A4988
     //#define Y2_DRIVER_TYPE A4988
     //#define Z2_DRIVER_TYPE A4988
     //#define Z3_DRIVER_TYPE A4988
     //#define Z4_DRIVER_TYPE A4988
-    #define E0_DRIVER_TYPE A4988
+    #define E0_DRIVER_TYPE TMC2209
     //#define E1_DRIVER_TYPE A4988
     //#define E2_DRIVER_TYPE A4988
     //#define E3_DRIVER_TYPE A4988

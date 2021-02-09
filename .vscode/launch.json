@@ -12,12 +12,13 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/build/KOSSEL/firmware.elf",
-            "projectEnvName": "KOSSEL",
-            "toolchainBinDir": "/home/nesifox/.platformio/packages/toolchain-atmelavr/bin",
+            "executable": "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/build/STM32F103RC_btt_512K/firmware.elf",
+            "projectEnvName": "STM32F103RC_btt_512K",
+            "toolchainBinDir": "/home/nesifox/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "svdPath": "/home/nesifox/.platformio/platforms/ststm32@6.1.1/misc/svd/STM32F103xx.svd",
             "preLaunchTask": {
                 "type": "PlatformIO",
-                "task": "Pre-Debug (KOSSEL)"
+                "task": "Pre-Debug (STM32F103RC_btt_512K)"
             },
             "internalConsoleOptions": "openOnSessionStart"
         },
@@ -25,9 +26,10 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/build/KOSSEL/firmware.elf",
-            "projectEnvName": "KOSSEL",
-            "toolchainBinDir": "/home/nesifox/.platformio/packages/toolchain-atmelavr/bin",
+            "executable": "/home/nesifox/Marlin Delta/Marlin-2-0-x-Anycubic-Kossel-Linear-Plus/.pio/build/STM32F103RC_btt_512K/firmware.elf",
+            "projectEnvName": "STM32F103RC_btt_512K",
+            "toolchainBinDir": "/home/nesifox/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "svdPath": "/home/nesifox/.platformio/platforms/ststm32@6.1.1/misc/svd/STM32F103xx.svd",
             "internalConsoleOptions": "openOnSessionStart"
         }
     ]
